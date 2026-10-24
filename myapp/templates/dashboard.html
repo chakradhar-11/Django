@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h1>Welcome to Student Management System</h1>
+    <p>Your account does not have a role assigned yet.</p>
+    <form method="POST" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
